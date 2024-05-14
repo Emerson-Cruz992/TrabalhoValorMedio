@@ -11,6 +11,17 @@ public class Custo {
      */
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null, "Hellw World");
+        
+        boolean meta = true;
+        boolean beta = false;
+        
+        int resposta = JOptionPane.showConfirmDialog(null, "Deseja repetir");
+        
+        meta = (resposta == JOptionPane.YES_OPTION);
+        beta = (resposta == JOptionPane.NO_OPTION);
+        
+        if(meta == true) JOptionPane.showMessageDialog(null, "validação 1");
+        if(beta == true) JOptionPane.showMessageDialog(null, "Confimação 2");
     }
     
 }
